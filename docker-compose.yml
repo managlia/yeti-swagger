@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+  web:
+    image: httpd
+    restart: always
+    volumes:
+     - ./src:/usr/local/apache2/htdocs/
+    ports:
+     - "3001:80"
